@@ -1,0 +1,15 @@
+<section class="container">
+  <h3 class="gallery-name">{{post.name}}</h3>
+  <h4>Post: {{posts}}</h4>
+  <!-- If the user is logged in, render the gallery content -->
+  {{#if loggedIn}}
+  <section class="flex-row justify-center">
+    {{#each user.post as |post|}}
+    {{> post-contents}}
+    {{/each}}
+  </section>
+</section>
+<!-- Otherwise, provide a link to login -->
+{{else}}
+<a href="/login">You must login first to view the dashboard</a>
+{{/if}}

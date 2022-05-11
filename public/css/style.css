@@ -1,5 +1,5 @@
 :root {
-  --primary: #3d5852;
+  --primary: #0e1a17;
   --secondary: #86938f;
   --tertiary: #5e877f;
   --quatrinary: #6c6b67;
@@ -8,7 +8,9 @@
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
-
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 body {
   font-family: Arial;
   margin: 0;
@@ -66,7 +68,7 @@ nav a:hover {
   background-color: var(--dark);
 }
 
-.gallery {
+.dashboard {
   flex: 4;
   background-color: #fff;
   padding: 50px;
@@ -161,4 +163,11 @@ img {
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+}
+
+header h1{
+  font-size: 3rem;
+  background-color: #577a7c;
+  color: #0e1a17;
+  border: 7px double var(--dark);
 }
