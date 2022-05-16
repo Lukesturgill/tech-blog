@@ -12,7 +12,7 @@ Comment.belongsTo(Post, {
 });
 
 Comment.belongsTo(User, {
-  foreignKey: 'user_id',
+  primaryKey: 'user_id',
   onDelete: 'SET NULL'
 });
 
