@@ -1,24 +1,23 @@
-const sequelize = require('../config/connection');
-const { User, Post } = require('../models');
+const { User } = require('../models');
 
 const userData = [
   {
     
     username: 'luke',
     email: 'luke@gmail.com',
-    password: '1234'
+    password: 'password123'
   },
   {
    
     username: 'julian',
     email: 'julian@dogs.com',
-    password: '1234'
+    password: 'password1234'
   },
   {
     
     username: 'kayla',
     email: 'kayla@gmail.com',
-    password: '4321'
+    password: 'password321'
   },
   {
     
@@ -30,13 +29,13 @@ const userData = [
     
     username: 'loke',
     email: 'loke@gmail.com',
-    password: 'luke2'
+    password: 'lokepassword'
   },
   {
 
     username: 'test5',
     email: 'test5@gmail.com',
-    password: '123'
+    password: 'testing123'
   }
 ];
 
